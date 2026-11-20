@@ -13,8 +13,8 @@ public class MoneyMath {
 
             //Show the result of each iterater
             System.out.println("Iterate : " + (1 + i));
-            System.out.println("Float: " + moneyDouble);
-            System.out.println("Double: " + moneyFloat);
+            System.out.println("Float: " + moneyFloat);
+            System.out.println("Double: " + moneyDouble);
             System.out.println("BigDecimal: " + bigDecimal);
         }
 

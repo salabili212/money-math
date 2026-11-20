@@ -55,16 +55,13 @@ public class MoneyMath {
         System.out.println("Float vs BigDecimal " + (bigDecimal.compareTo(floatValue)));
 
         //print the values
-        System.out.println("Float: " + moneyDouble);
-        System.out.println("Double: " + moneyFloat);
+        System.out.println("Float: " + moneyFloat);
+        System.out.println("Double: " + moneyDouble);
         System.out.println("BigDecimal: " + bigDecimal);
     }
 
-//      """  Questions to answer:
-//                - How many cents is the float off after 1000 iterations?Float: 19990.000000000135
-    //
-//                - Why does the BigDecimal print 1.00 and not 1? because It returns a value with a decimals not integer
-//                - What happens if you call .add(); without assigning the result back to your variable?
-//                because bigDecimal is immutable like it can ont change the value of the variable it only returns a vlaue
-//                so we store that in a  variable to avoid losing the return value"""
+    // The float is about 18 cents higher than the exact total after 1,000 additions.
+    // BigDecimal prints 1.00 because adding "0.10" preserves two decimal places.
+    // BigDecimal is immutable. If I call add() without saving the returned value,
+    // the original variable still holds the old amount.
 }
